@@ -7,7 +7,7 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: zmk-new_corne-base
-      url-base: https://github.com/a741725193
+      url-base: https://github.com/davidfisk
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,5 +15,6 @@ manifest:
     - name: zmk-new_corne
       remote: zmk-new_corne-base
       revision: main
+      import: config/west.yml
   self:
     path: config
